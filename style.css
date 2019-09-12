@@ -3,35 +3,13 @@
     box-sizing: border-box;
 }
 body {
-    font-family: 'Lato', sans-serif;
-    background: url(beach.jpg);
+    font-family: serif;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
+      ),url(beach.jpg);
     background-size: cover;
-    
-    
     overflow: hidden;
-}
-
-h1 {
-    font-size: 3rem;
-    font-weight: 700;
-    margin:  0 0 2rem;
-    color: #D3D3D3;
-}
-
-h2 {
-    color: #D3D3D3;
-}
-
-ul, nav {
-    padding: 0;
-    list-style-type: none;
-}
-
-
-a {
-    color: #D3D3D3;
-    text-decoration: none;
-    
     
 }
 
@@ -45,6 +23,28 @@ header {
     text-decoration: none;
 }
 
+.navbar-brand{
+    color: #D3D3D3;
+    margin: 16px 0px;
+    font-size: 1.5rem;
+    
+
+}
+
+ul, nav {
+    padding: 0;
+    list-style-type: none;
+}
+
+a {
+    color: #D3D3D3;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    opacity: 0.5;
+}
+
 header nav ul{
     display: flex;
 }
@@ -52,8 +52,6 @@ header nav ul{
 header nav li {
     margin: 0 15px;
 }
-
-
 
 .cover {
     height: 100vh;
@@ -65,6 +63,14 @@ header nav li {
     flex-direction: column;
 }
 
+h1 {
+    font-size: 90px;
+    font-weight: 700;
+    color: #D3D3D3;
+    margin: 0;
+   
+}
+
 .btn {
     text-decoration: none;
     text-transform: uppercase;
@@ -73,11 +79,19 @@ header nav li {
     font-weight: 700;
     padding: 20px 40px;
     transition: 0.4s all;
+    border-radius: 10px;
 }
 
 .btn:hover{
     background-color: #A52A2A;
     color: #D3D3D3;
+}
+
+.cover p {
+    max-width: 31rem;
+    color: #D3D3D3;
+    font-size: 20px;
+    text-align: center;
 }
 
 
